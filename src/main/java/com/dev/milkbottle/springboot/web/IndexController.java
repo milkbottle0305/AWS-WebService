@@ -1,7 +1,6 @@
 package com.dev.milkbottle.springboot.web;
 
 import com.dev.milkbottle.springboot.config.auth.dto.SessionUser;
-import com.dev.milkbottle.springboot.domain.posts.PostsRepository;
 import com.dev.milkbottle.springboot.service.posts.PostsService;
 import com.dev.milkbottle.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
