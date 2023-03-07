@@ -1,6 +1,7 @@
 package com.dev.milkbottle.springboot.domain.user;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Getter
