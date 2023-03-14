@@ -17,6 +17,11 @@ test { // (2)
     useJUnitPlatform()
 }
 
+//plain 안되게
+jar {
+    enabled = false
+}
+
 dependencies {
     //(3)
     implementation('org.springframework.boot:spring-boot-starter-web')
