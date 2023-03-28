@@ -5,7 +5,7 @@ jdk:
 branches:
   only:
     - master
-    -
+
 before_install:
   - chmod +x gradlew
 
@@ -16,12 +16,6 @@ cache:
     - '$home/.gradle'
 
 script: "./gradlew clean build"
-
-# CI 끝나면 메일로 알람
-notifications:
-  email:
-    recipients:
-      - err404@khu.ac.kr
 
 before_deploy:
   - zip -r AWS-WebService *
@@ -48,3 +42,12 @@ deploy:
     deployment_group: springboot2-webservice-group
     region: ap-northeast-2
     wait-until-deployed: true
+    on:
+      repo: milkbottle0305/AWS-WebService
+      branch: master
+
+# CI 끝나면 메일로 알람
+notifications:
+  email:
+    recipients:
+      - err404@khu.ac.kr
