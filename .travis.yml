@@ -33,6 +33,10 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: springboot-build1
+    key: AWS_WebService.zip
+    bundle_type: zip
+    application: springboot2-webservice
+    deployment_group: springboot2-webservice-group
     region: ap-northeast-2
     skip_cleanup: true
     acl: private
