@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.dev.milkbottle'
-version '1.0-SNAPSHOT'
+version '1.0.1-SNAPSHOT-'+new Date().format('yyyyMMddHHmmss')
 
 repositories {
     mavenCentral()
